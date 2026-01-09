@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartMind AI - Premium Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ChartMind AI</h1>
+            <p class="owner">Owner: David Mamun William</p>
+        </header>
+
+        <section class="upload-section">
+            <h2>Upload Chart</h2>
+            <input type="file" id="chartUpload" multiple accept="image/*">
+            <button id="analyzeBtn">Analyze</button>
+        </section>
+
+        <section class="signal-section">
+            <h2>Signal Output</h2>
+            <div id="signalCard">
+                <p>Direction: <span id="direction">-</span></p>
+                <p>Entry: <span id="entry">-</span></p>
+                <p>TP: <span id="tp">-</span></p>
+                <p>SL: <span id="sl">-</span></p>
+                <p>Probability: <span id="probability">-</span>%</p>
+                <p>Trend: <span id="trend">-</span></p>
+            </div>
+
+            <div class="feedback-buttons">
+                <button id="winBtn">Win ✅</button>
+                <button id="lossBtn">Loss ❌</button>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <h2>Latest News</h2>
+            <ul id="newsList"></ul>
+        </section>
+
+        <section class="accuracy-section">
+            <h2>Accuracy Stats</h2>
+            <p>Overall Accuracy: <span id="overallAcc">-</span>%</p>
+            <pre id="marketStats"></pre>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+                                  </html>
